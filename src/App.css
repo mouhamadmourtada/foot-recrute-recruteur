@@ -1,3 +1,16 @@
+:root {
+  --main100:  rgba(18, 65, 88, 1);
+  --main05:  rgba(18, 65, 88, 0.05);
+  --main10:  rgba(18, 65, 88, 0.1);
+  --main15:  rgba(18, 65, 88, 0.15);
+  --main30:  rgba(18, 65, 88, 0.3);
+  --main60:  rgba(18, 65, 88, 0.6);
+  --sec100 : rgba(148, 118, 83, 1);
+  --sec10 : rgba(148, 118, 83, 0.1);
+  --sec30 : rgba(148, 118, 83, 0.3);
+  --sec60 : rgba(148, 118, 83, 0.6);
+}
+
 .App {
   text-align: center;
 }
@@ -13,26 +26,61 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* debut login css */
+
+
+.App {
+  background-color: white;
+}
+
+.Auth-form-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+/* fin de login css */
+
+
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--main10); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main100); 
+  border-radius: 10px;
 }
